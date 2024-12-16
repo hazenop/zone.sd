@@ -4,72 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone.sd - Hussam Mohamed's Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f0f4f8;
         }
         h1, h2 {
-            color: #0077B5;
+            color: #1e40af;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
         }
         h2 {
-            border-bottom: 2px solid #0077B5;
+            font-size: 1.8em;
+            border-bottom: 2px solid #1e40af;
             padding-bottom: 10px;
+            margin-top: 40px;
         }
         .profile-header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .profile-image {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-right: 20px;
             object-fit: cover;
+            border: 3px solid #1e40af;
         }
         .quote {
             font-style: italic;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            color: #4a5568;
         }
         .skills {
             font-weight: bold;
             font-size: 1.2em;
-            color: #0077B5;
+            color: #1e40af;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         blockquote {
-            border-left: 4px solid #0077B5;
+            border-left: 4px solid #1e40af;
             padding-left: 20px;
             font-style: italic;
-            color: #555;
+            color: #4a5568;
+            margin: 20px 0;
+            background-color: #e6f0ff;
+            padding: 15px;
+            border-radius: 5px;
         }
         .cta-button {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .cta-button a {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #0077B5;
+            padding: 15px 30px;
+            background-color: #1e40af;
             color: white;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .cta-button a:hover {
-            background-color: #005fa3;
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: #1e40af;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -91,7 +128,7 @@
         </p>
         
         <p>
-            Hussam Mohamed (He/Him) is a dynamic Business Intelligence Analyst, currently leveraging data to drive decisions at Amazon. With a toolkit spanning VBA, SQL, PowerBI, and advanced Excel, Hussam turns complex datasets into clear, actionable strategies.
+            Hussam Mohamed (He/Him) is a dynamic Business Intelligence Analyst, currently leveraging data to drive decisions at Amazon. With a toolkit spanning VBA, SQL, PowerBI, and advanvanced Excel, Hussam turns complex datasets into clear, actionable strategies.
         </p>
         
         <ul>
@@ -113,15 +150,36 @@
             Whether he's developing a new analytical model or streamlining a data workflow, Hussam's commitment to excellence and data-driven decision-making continues to make waves in the field of business intelligence.
         </p>
 
+        <h2>Showcase of Results with Our Students</h2>
+        <ul>
+            <li>🔍 Specializes in uncovering hidden patterns in data</li>
+            <li>📈 Creates intuitive dashboards that tell compelling data stories</li>
+            <li>🔧 Optimizes processes to boost efficiency and productivity</li>
+            <li>🤝 Bridges the gap between technical and non-technical stakeholders</li>
+        </ul>
+
+        <h2>Training Delivery Methods</h2>
+        <ul>
+            <li>🖥️ Innovative Teaching Approach: I focus on practical, real-world applications and tailor my teaching to each student's unique learning style</li>
+            <li>📚 Real-World Expertise: My experience in [specific field] brings valuable insights and up-to-date industry practices to the classroom</li>
+            <li>🏢 On-Site Training: Customized in-person sessions at your location</li>
+            <li>👥 Engagement & Motivation: I use interactive methods to keep learners engaged, fostering curiosity and critical thinking</li>
+            <li>🎬 Video Tutorials: Step-by-step guides for various data analysis techniques</li>
+            <li>📝 Hands-On Projects: Real-world data challenges to apply learned skills</li>
+            <li>🤝 Commitment to Success: I am deeply invested in helping my students achieve their personal and professional goals and build road map to each and every student</li>
+        </ul>
+
         <div class="cta-button">
             <a href="https://calendly.com/hhussambob2/30min?month=2024-12" target="_blank">
                 📅 Schedule a Meeting with Hussam
             </a>
         </div>
         
-        <p>
-            📚 <a href="https://www.linkedin.com/in/hussam-mohamed-17682990/" target="_blank">LinkedIn Profile</a> | 📞 Phone: +************05000986
-        </p>
+        <div class="contact-info">
+            <p>
+                📚 <a href="https://www.linkedin.com/in/hussam-mohamed-17682990/" target="_blank">LinkedIn Profile</a> | 📞 *********************05000986
+            </p>
+        </div>
     </section>
 </body>
 </html>
