@@ -3,173 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zone.sd - IT Talent & Innovation Hub</title>
-    <!-- External CSS Links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Business Analyst Course - Zone.sd</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f5f5f5;
         }
         .navbar {
-            background: #fff;
+            background: #007BFF;
+            color: white;
             padding: 1rem 2rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
-        .logo img {
-            max-height: 50px;
-            width: auto;
-        }
-        .navbar .menu a {
+        .navbar a {
+            color: white;
             text-decoration: none;
-            color: #333;
             margin: 0 15px;
-            font-size: 1rem;
-        }
-        .hero-section {
-            background: url('hero-bg.jpg') no-repeat center center/cover;
-            text-align: center;
-            color: white;
-            padding: 5rem 2rem;
-        }
-        .hero-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .hero-section p {
-            font-size: 1.2rem;
-        }
-        .hero-section .cta {
-            margin-top: 2rem;
-        }
-        .cta button {
-            background-color: #007BFF;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .cta button:hover {
-            background-color: #0056b3;
-        }
-        .courses-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-        .course-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .course-card:hover {
-            transform: translateY(-5px);
-        }
-        .course-title {
-            font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 1rem;
         }
-        .course-description {
-            font-size: 0.9rem;
-            line-height: 1.6;
+        .content {
+            padding: 3rem 2rem;
         }
-        .training-methods {
-            margin: 2rem auto;
-            padding: 2rem;
-            background: #F9F9F9;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        footer a {
+        .content h1 {
             color: #007BFF;
-            text-decoration: none;
+            font-size: 2rem;
+        }
+        .content ul {
+            list-style-type: square;
+            margin: 1rem 0;
+        }
+        .content ul li {
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Zone.sd Logo">
-        </div>
-        <div class="menu">
-            <a href="#courses">Courses</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="index.html#courses">Courses</a>
     </nav>
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Welcome to Zone.sd</h1>
-        <p>Your IT Recruitment & Training Partner</p>
-        <div class="cta">
-            <button onclick="window.location.href='#contact';">Get Started</button>
-        </div>
-    </section>
-    <!-- Courses Section -->
-    <section class="courses-list" id="courses">
-        <h2 style="text-align: center;">Our Training Programs</h2>
-        <!-- Add dynamic course cards here -->
-    </section>
-    <!-- Services Section -->
-    <section id="services" class="training-methods">
-        <h2>Our Services</h2>
+    <div class="content">
+        <h1>Business Analyst for Healthcare, Finance, and Insurance</h1>
+        <p>This course covers:</p>
         <ul>
-            <li><strong>Recruitment Services:</strong> Finding the best IT talent for your company.</li>
-            <li><strong>Training Programs:</strong> Upskilling professionals in cutting-edge technologies.</li>
-            <li><strong>Customized Solutions:</strong> Tailored training for organizational needs.</li>
-            <li><strong>Certification Preparation:</strong> Helping candidates become certified experts.</li>
+            <li>Domain-specific business analysis</li>
+            <li>Healthcare systems and workflows</li>
+            <li>Financial services processes</li>
+            <li>Insurance industry requirements</li>
+            <li>Industry-standard methodologies</li>
         </ul>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 style="text-align: center;">Contact Us</h2>
-        <p style="text-align: center;">Let's work together to grow your team and skills!</p>
-        <p style="text-align: center;">
-            <strong>Email:</strong> info@zone.sd | <strong>Phone:</strong> +1 (123) 456-7890
-        </p>
-        <div style="text-align: center;">
-            <button onclick="window.location.href='https://calendly.com/hhussambob2/30min?month=2024-12';">Schedule a Meeting</button>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Zone.sd. All rights reserved. | <a href="https://www.zone.sd">www.zone.sd</a></p>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+        <p>Duration: 12 weeks</p>
+        <p>Level: Intermediate to Advanced</p>
+    </div>
 </body>
 </html>
-
-
-SAM mohamed
-  1:14 PM
+1:16
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -230,9 +119,3 @@ SAM mohamed
     </div>
 </body>
 </html>
-
-
-
-
-
-
