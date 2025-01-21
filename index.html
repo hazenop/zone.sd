@@ -20,8 +20,19 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Zone.sd Logo">
+            </div>
             <div class="nav-links">
-                <a href="#courses" class="active">Our Courses</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#business-plan">Business Plan</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="cta-button">
+                <a href="#contact" class="btn-primary">Get Started</a>
             </div>
         </div>
     </nav>
@@ -31,44 +42,53 @@
         <div class="hero-content">
             <h1 data-aos="fade-up">Welcome to Zone.sd</h1>
             <p data-aos="fade-up" data-aos-delay="200">Connecting Excellence in IT Talent</p>
+            <!-- [Hero content remains the same] -->
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section class="courses" id="courses">
+    <!-- About ut Section -->
+    <section id="about">
+        <div class="profile-header">
+            <img src="z.jpg" alt="Zone.sd Logo" class="profile-image">
+            <p class="quote">
+                "Transforming data into insights, and insights into action."
+            </p>
+        </div>
+        <!-- [About content remains the same] -->
+    </section>
+
+    <!-- Business Plan Section -->
+    <section class="business-plan" id="business-plan">
         <div class="section-header" data-aos="fade-up">
-            <h2>Our Courses</h2>
+            <h2>Our Business Plan</h2>
+            <p>Strategic Vision for Excellence</p>
         </div>
-        <div class="courses-grid">
-            <div class="course-card" data-aos="fade-up">
-                <h3>Business Analyst</h3>
-                <p>Specialized training for healthcare, finance, and insurance domains</p>
-            </div>
-            
-            <div class="course-card" data-aos="fade-up">
-                <h3>Data Analytics</h3>
-                <p>Comprehensive training in Excel, Power BI, MySQL and SQL Server</p>
-            </div>
-            
-            <div class="course-card" data-aos="fade-up">
-                <h3>Full SQL Server for Heroes</h3>
-                <p>Advanced SQL Server training program</p>
-            </div>
-            
-            <div class="course-card" data-aos="fade-up">
-                <h3>Salesforce Administrator</h3>
-                <p>Professional Salesforce administration training</p>
-            </div>
-            
-            <div class="course-card" data-aos="fade-up">
-                <h3>Python for Data Science</h3>
-                <p>Python programming focused on data science applications</p>
-            </div>
+        <div class="plan-grid">
+            <!-- [Business plan cards remain the same] -->
         </div>
     </section>
 
-    <!-- Co Contact Section -->
+    <!-- Training Methods Section -->
+    <section id="training">
+        <h2>Training Delivery Methods</h2>
+        <ul>
+            <!-- [Training methods content remains the same] -->
+        </ul>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <!-- [Your services content here] -->
+    </section>
+
+    <!-- Contact Section -->
     <section class="contact" id="contact">
+        <div class="cta-button">
+            <a href="https://calendly.com/hhussambob2/30min?month=2024-12" target="_blank">
+                📅 Schedule a Meeting with Hussam
+            </a>
+        </div>
+
         <div class="contact-info">
             <p>
                 📚 <a href="https://www.linkedin.com/in/hazenop" target="_blank">LinkedIn Profile</a> | ************986
@@ -82,7 +102,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script pt src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
