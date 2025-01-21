@@ -12,11 +12,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* Add your CSS styles here */
         .navbar {
             background: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 0.5rem 0;
+            box-shashadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo img {
+            max-height: 50px; /* Smaller logo size */
+            width: auto;
         }
 
         .courses-list {
@@ -50,16 +54,25 @@
             font-size: 0.9rem;
             line-height: 1.6;
         }
+
+        .course-details {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .training-methods {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #f9f9f9;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="Zone.sd Logo">
-            </div>
-            <h2>Courses We Provide</h2>
+        <div class="logo">
+            <img src="logo.png" alt="Zone.sd Logo">
         </div>
     </nav>
 
@@ -67,28 +80,95 @@
     <section class="courses-list">
         <div class="course-card" data-aos="fade-up">
             <h3 class="course-title">Business Analyst for Healthcare, Finance, and Insurance Domains</h3>
-            <p class="course-description">Comprehensive training for aspiring business analysts in specialized domains.</p>
+            <p class="course-description">
+                Comprehensive training covering:
+                - Domain-specific business analysis
+                - Healthcare systems and workflows
+                - Financial services processes
+                - Insurance industry requirements
+                - Industry-standard methodologies
+            </p>
+            <div class="course-details">
+                Duration: 12 weeks
+                Level: Intermediate to Advanced
+            </div>
         </div>
 
-        <div class="course-card" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="course-title">Data Analytics Suite</h3>
-            <p class="course-description">Master data analytics using Excel, Power BI, MySQL, and SQL Server.</p>
+        <div class="course-card" data-aos="fade-up">
+            <h3 class="course-title">Data Analytics Ss Suite</h3>
+            <p class="course-description">
+                Master data analytics tools:
+                - Advanced Excel techniques
+                - Power BI dashboard creation
+                - MySQL database management
+                - SQL Server implementation
+                - Data visualization
+            </p>
+            <div class="course-details">
+                Duration: 16 weeks
+                Level: Beginner to Advanced
+            </div>
         </div>
 
-        <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="course-card" data-aos="fade-up">
             <h3 class="course-title">Full SQL Server for Heroes</h3>
-            <p class="course-description">Advanced SQL Server training for database professionals.</p>
+            <p class="course-description">
+                Advanced SQL Server topics:
+                - Database design
+                - Performance tuning
+                - Security implementation
+                - Backup and recovery
+                - High availability solutions
+            </p>
+            <div class="course-details">
+                Duration: 8 weeks
+                Level: Advanced
+            </div>
         </div>
 
-        <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="course-card" data-aos="fade-de-up">
             <h3 class="course-title">Salesforce Administrator</h3>
-            <p class="course-description">Complete Salesforce administration certification preparation.</p>
+            <p class="course-description">
+                Complete administration training:
+                - User management
+                - Security and access control
+                - Customization and configuration
+                - App building
+                - Certification preparation
+            </p>
+            <div class="course-details">
+                Duration: 10 weeks
+                Level: Beginner to Intermediate
+            </div>
         </div>
 
-        <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="course-card" data-aos="fade-up">
             <h3 class="course-title">Python for Data Science</h3>
-            <p class="course-description">Learn Python programming specifically for data science applications.</p>
+            <p class="course-description">
+                Comprehensive data science curriculum:
+                - Python fundamentals
+                - Data manipulation with Pandas
+                - Data visualization
+                - Machine learning basics
+                - Real-world projects
+            </p>
+            <div class="course-details">
+                Duration: 14 weeks
+                Level: Beginner to Advanced
+            </div>
         </div>
+    </section>
+
+    <!-- Training Methods -->
+    <section class="training-methods">
+        <h2>Training Delivery Methods</h2>
+        <ul>
+            <li>Live Online Sessions</li>
+            <li>Hands-on Projects</li>
+            <li>One-on-One Mentoring</li>
+            <li>Real-world Case Studies</li>
+            <li>Interactive Workshops</li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
