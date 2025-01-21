@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zone.sd - IT Recruitment and Training</title>
+    <title>Zone.sd - IT Recruitment & Training Hub</title>
     <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -14,6 +14,7 @@
             background: #f9f9f9;
             color: #333;
         }
+        /* Navbar */
         .navbar {
             background: #007bff;
             padding: 1rem;
@@ -22,9 +23,12 @@
         }
         .navbar h1 {
             margin: 0;
+            font-size: 1.8rem;
         }
+        /* Courses Section */
         .courses-section {
             padding: 2rem;
+            background: #eef7ff;
         }
         .courses-section h2 {
             text-align: center;
@@ -42,17 +46,23 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 1rem;
             text-align: center;
+            transition: transform 0.3s ease;
         }
         .course-card:hover {
-            background: #eef7ff;
+            transform: scale(1.05);
         }
         .course-title {
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-size: 1.3rem;
+            font-weight: bold;
             color: #007bff;
         }
+        .course-description {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0.5rem 0;
+        }
         .course-link {
-            display: block;
+            display: inline-block;
             margin-top: 1rem;
             background: #007bff;
             color: #fff;
@@ -64,10 +74,34 @@
         .course-link:hover {
             background: #0056b3;
         }
-        footer {
-            margin-top: 3rem;
+        /* Contact Section */
+        .contact-section {
+            padding: 2rem;
+            text-align: center;
             background: #007bff;
-            color: #fff;
+            color: white;
+        }
+        .contact-section h2 {
+            margin-bottom: 1rem;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #fff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .contact-links a:hover {
+            background: #0056b3;
+            color: white;
+        }
+        /* Footer */
+        footer {
+            background: #003f7d;
+            color: white;
             text-align: center;
             padding: 1rem;
         }
@@ -76,38 +110,72 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <h1>Zone.sd - IT Recruitment & Training Hub</h1>
+        <h1>Zone.sd - IT Recruitment & Training</h1>
     </nav>
     <!-- Courses Section -->
     <section class="courses-section">
-        <h2>Explore Our Training Programs</h2>
+        <h2>Our Training Programs</h2>
         <div class="course-list">
+            <!-- Business Analyst Training -->
             <div class="course-card">
                 <h3 class="course-title">Business Analyst Training</h3>
-                <p>Learn domain-specific analysis for healthcare, finance, and insurance industries.</p>
-                <a href="#ba-details" class="course-link">View Details</a>
+                <p class="course-description">Learn the essentials of business analysis for various domains.</p>
+                <ul style="text-align: left;">
+                    <li>Healthcare systems and workflows</li>
+                    <li>Finance and insurance requirements</li>
+                    <li>Data visualization for business insights</li>
+                    <li>Tools: Jira, Confluence, and UML diagrams</li>
+                </ul>
+                <a href="#book-meeting" class="course-link">Enroll Now</a>
             </div>
+            <!-- Data Analytics Training -->
             <div class="course-card">
                 <h3 class="course-title">Data Analytics Suite</h3>
-                <p>Master tools like Power BI, SQL, and Excel to become a data expert.</p>
-                <a href="#da-details" class="course-link">View Details</a>
+                <p class="course-description">Master tools and techniques to analyze data effectively.</p>
+                <ul style="text-align: left;">
+                    <li>Advanced Excel and Power BI</li>
+                    <li>SQL and MySQL for data querying</li>
+                    <li>Data visualization best practices</li>
+                    <li>Real-world projects and case studies</li>
+                </ul>
+                <a href="#book-meeting" class="course-link">Enroll Now</a>
             </div>
+            <!-- Salesforce Training -->
             <div class="course-card">
                 <h3 class="course-title">Salesforce Administrator</h3>
-                <p>Learn to manage Salesforce users, security, and build applications.</p>
-                <a href="#sf-details" class="course-link">View Details</a>
+                <p class="course-description">Become an expert in Salesforce administration and tools.</p>
+                <ul style="text-align: left;">
+                    <li>User management and security</li>
+                    <li>Customization and workflow automation</li>
+                    <li>Integration with external systems</li>
+                    <li>Certification preparation</li>
+                </ul>
+                <a href="#book-meeting" class="course-link">Enroll Now</a>
             </div>
-            <div class="course-card">
-                <h3 class="course-title">SQL Server Training</h3>
-                <p>Advanced database design, performance tuning, and security.</p>
-                <a href="#sql-details" class="course-link">View Details</a>
-            </div>
+            <!-- Python for Data Science -->
             <div class="course-card">
                 <h3 class="course-title">Python for Data Science</h3>
-                <p>Learn Python fundamentals, data visualization, and machine learning.</p>
-                <a href="#python-details" class="course-link">View Details</a>
+                <p class="course-description">Dive deep into data science with Python.</p>
+                <ul style="text-align: left;">
+                    <li>Data manipulation with Pandas</li>
+                    <li>Visualization with Matplotlib and Seaborn</li>
+                    <li>Machine learning basics</li>
+                    <li>Real-world projects</li>
+                </ul>
+                <a href="#book-meeting" class="course-link">Enroll Now</a>
             </div>
         </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section" id="book-meeting">
+        <h2>Contact Us</h2>
+        <p>Let's work together to unlock your potential!</p>
+        <div class="contact-links">
+            <a href="https://calendly.com/hhussambob2/30min" target="_blank">:date: Book a Meeting</a>
+            <a href="https://linkedin.com/in/hazenop" target="_blank">:link: LinkedIn Profile</a>
+            <a href="mailto:info@zone.sd">:email: Email Us</a>
+        </div>
+        <p>Phone: +*********986</p>
     </section>
     <!-- Footer -->
     <footer>
@@ -115,3 +183,13 @@
     </footer>
 </body>
 </html>
+
+linkedin.comlinkedin.com
+Hussam Mohamed - Amazon | LinkedIn
+Results-oriented professional with a proven ability to drive clarity and improve… · Experience: Amazon · Education: Omdurman Ahlia Univarsity · Location: Des Moines Metropolitan Area · 500+ connections on LinkedIn. View Hussam Mohamed’s profile on LinkedIn, a professional community of 1 billion members.
+
+
+
+
+
+
