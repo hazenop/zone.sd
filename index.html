@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone.sd - IT Recruitment & Training Hub</title>
+    <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -15,130 +16,60 @@
         }
         /* Navbar */
         .navbar {
-            background: #1e2a47;
+            background: #007bff;
             padding: 1rem;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             color: #fff;
-            position: relative;
-        }
-        .navbar h1 {
-            margin: 0;
-            font-size: 1.8rem;
         }
         .navbar img {
-            position: absolute;
-            left: 20px;
-            top: 10px;
-            width: 50px;
             height: 50px;
         }
-        /* Hamburger Menu */
-        .menu-icon {
-            display: none;
+        .menu {
             cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            .menu-icon {
-                display: block;
-                font-size: 2rem;
-            }
-            .navbar ul {
-                display: none;
-                text-align: center;
-            }
-            .navbar.active ul {
-                display: block;
-            }
-            .navbar ul li {
-                margin: 1rem 0;
-            }
-        }
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar ul li {
-            display: inline-block;
-            margin: 0 1rem;
-        }
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
             font-weight: bold;
         }
-        /* Courses Section */
-        .courses-section {
-            padding: 2rem;
-            background: #eef7ff;
-        }
-        .courses-section h2 {
-            text-align: center;
-            color: #1e2a47;
-            margin-bottom: 2rem;
-        }
-        .course-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .course-card {
-            background: #fff;
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            z-index: 10;
+            top: 70px;
+            left: 10%;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 1rem;
-            text-align: center;
-            transition: transform 0.3s ease;
         }
-        .course-card:hover {
-            transform: scale(1.05);
-        }
-        .course-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #1e2a47;
-        }
-        .course-description {
-            font-size: 0.95rem;
-            color: #555;
-            margin: 0.5rem 0;
-        }
-        .course-link {
-            display: inline-block;
-            margin-top: 1rem;
-            background: #1e2a47;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
+        .dropdown a {
+            display: block;
             text-decoration: none;
-            transition: background 0.3s ease;
+            color: #333;
+            margin-bottom: 0.5rem;
         }
-        .course-link:hover {
-            background: #0056b3;
+        .dropdown a:hover {
+            color: #007bff;
         }
-        /* Contact Section */
-        .contact-section {
+        /* Courses Section */
+        .course-section {
             padding: 2rem;
-            text-align: center;
-            background: #1e2a47;
-            color: white;
         }
-        .contact-section h2 {
-            margin-bottom: 1rem;
+        .course {
+            margin-bottom: 2rem;
+            background: #eef7ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .contact-links a {
-            display: inline-block;
-            margin: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #fff;
-            color: #1e2a47;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
+        .course h2 {
+            color: #007bff;
         }
-        .contact-links a:hover {
-            background: #0056b3;
-            color: white;
+        .course ul {
+            margin-top: 1rem;
+        }
+        .course ul li {
+            margin-bottom: 0.5rem;
         }
         /* Footer */
         footer {
@@ -152,42 +83,75 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <img src="/mnt/data/Untitled design.jpg" alt="Zone Logo">
-        <h1>Zone.sd - IT Recruitment & Training</h1>
-        <span class="menu-icon">&#9776;</span>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <img src="Untitled design.jpg" alt="Zone Logo">
+        <div class="menu" onclick="toggleMenu()">Training Programs</div>
     </nav>
+
+    <!-- Dropdown menu -->
+    <div class="dropdown" id="menu-dropdown">
+        <a href="#business-analyst">Business Analyst Training</a>
+        <a href="#data-analytics">Data Analytics Suite</a>
+        <a href="#salesforce">Salesforce Administrator</a>
+        <a href="#python-data-science">Python for Data Science</a>
+    </div>
+
     <!-- Courses Section -->
-    <section class="courses-section" id="courses">
-        <h2>Our Training Programs</h2>
-        <div class="course-list">
-            <!-- Course Cards (as you already have) -->
+    <div class="course-section">
+        <div class="course" id="business-analyst">
+            <h2>Business Analyst Training</h2>
+            <p>Learn the essential skills to excel as a Business Analyst in various industries.</p>
+            <ul>
+                <li>Understanding healthcare systems and workflows</li>
+                <li>Finance and insurance requirement analysis</li>
+                <li>Data visualization for business insights</li>
+                <li>Practical tools: Jira, Confluence, UML diagrams</li>
+            </ul>
         </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Let's work together to unlock your potential!</p>
-        <div class="contact-links">
-            <a href="https://calendly.com/hhussambob2/30min" target="_blank">:date: Book a Meeting</a>
-            <a href="https://linkedin.com/in/hazenop" target="_blank">:link: LinkedIn Profile</a>
-            <a href="mailto:Hhussambob2@gmail.com">:email: Email Us</a>
+
+        <div class="course" id="data-analytics">
+            <h2>Data Analytics Suite</h2>
+            <p>Master data analysis techniques and tools to uncover insights and make data-driven decisions.</p>
+            <ul>
+                <li>Advanced Excel and Power BI for reporting</li>
+                <li>SQL and MySQL for data querying</li>
+                <li>Data visualization best practices</li>
+                <li>Real-world projects and case studies</li>
+            </ul>
         </div>
-        <p>Phone: +15714572800</p>
-    </section>
+
+        <div class="course" id="salesforce">
+            <h2>Salesforce Administrator</h2>
+            <p>Gain expertise in Salesforce administration, customization, and workflow automation.</p>
+            <ul>
+                <li>User management and security features</li>
+                <li>Customization and workflow automation</li>
+                <li>Integration with external systems</li>
+                <li>Preparation for Salesforce Administrator Certification</li>
+            </ul>
+        </div>
+
+        <div class="course" id="python-data-science">
+            <h2>Python for Data Science</h2>
+            <p>Unlock the power of Python for data science, machine learning, and big data analytics.</p>
+            <ul>
+                <li>Data manipulation with Pandas</li>
+                <li>Visualization with Matplotlib and Seaborn</li>
+                <li>Introduction to machine learning</li>
+                <li>Hands-on real-world projects</li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Zone.sd. All rights reserved.</p>
     </footer>
 
     <script>
-        document.querySelector('.menu-icon').addEventListener('click', function() {
-            document.querySelector('.navbar').classList.toggle('active');
-        });
+        function toggleMenu() {
+            const menuDropdown = document.getElementById("menu-dropdown");
+            menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
+        }
     </script>
 </body>
 </html>
