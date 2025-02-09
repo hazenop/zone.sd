@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone.sd - IT Recruitment & Training Hub</title>
-    <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -16,14 +15,57 @@
         }
         /* Navbar */
         .navbar {
-            background: #007bff;
+            background: #1e2a47;
             padding: 1rem;
             text-align: center;
             color: #fff;
+            position: relative;
         }
         .navbar h1 {
             margin: 0;
             font-size: 1.8rem;
+        }
+        .navbar img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        /* Hamburger Menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+                font-size: 2rem;
+            }
+            .navbar ul {
+                display: none;
+                text-align: center;
+            }
+            .navbar.active ul {
+                display: block;
+            }
+            .navbar ul li {
+                margin: 1rem 0;
+            }
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
         /* Courses Section */
         .courses-section {
@@ -32,7 +74,7 @@
         }
         .courses-section h2 {
             text-align: center;
-            color: #007bff;
+            color: #1e2a47;
             margin-bottom: 2rem;
         }
         .course-list {
@@ -54,7 +96,7 @@
         .course-title {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #007bff;
+            color: #1e2a47;
         }
         .course-description {
             font-size: 0.95rem;
@@ -64,7 +106,7 @@
         .course-link {
             display: inline-block;
             margin-top: 1rem;
-            background: #007bff;
+            background: #1e2a47;
             color: #fff;
             padding: 0.5rem 1rem;
             border-radius: 5px;
@@ -78,7 +120,7 @@
         .contact-section {
             padding: 2rem;
             text-align: center;
-            background: #007bff;
+            background: #1e2a47;
             color: white;
         }
         .contact-section h2 {
@@ -89,7 +131,7 @@
             margin: 0.5rem;
             padding: 0.5rem 1rem;
             background: #fff;
-            color: #007bff;
+            color: #1e2a47;
             text-decoration: none;
             border-radius: 5px;
             transition: all 0.3s ease;
@@ -110,64 +152,24 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
+        <img src="/mnt/data/Untitled design.jpg" alt="Zone Logo">
         <h1>Zone.sd - IT Recruitment & Training</h1>
+        <span class="menu-icon">&#9776;</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
     <!-- Courses Section -->
-    <section class="courses-section">
+    <section class="courses-section" id="courses">
         <h2>Our Training Programs</h2>
         <div class="course-list">
-            <!-- Business Analyst Training -->
-            <div class="course-card">
-                <h3 class="course-title">Business Analyst Training</h3>
-                <p class="course-description">Learn the essentials of business analysis for various domains.</p>
-                <ul style="text-align: left;">
-                    <li>Healthcare systems and workflows</li>
-                    <li>Finance and insurance requirements</li>
-                    <li>Data visualization for business insights</li>
-                    <li>Tools: Jira, Confluence, and UML diagrams</li>
-                </ul>
-                <a href="#book-meeting" class="course-link">Enroll Now</a>
-            </div>
-            <!-- Data Analytics Training -->
-            <div class="course-card">
-                <h3 class="course-title">Data Analytics Suite</h3>
-                <p class="course-description">Master tools and techniques to analyze data effectively.</p>
-                <ul style="text-align: left;">
-                    <li>Advanced Excel and Power BI</li>
-                    <li>SQL and MySQL for data querying</li>
-                    <li>Data visualization best practices</li>
-                    <li>Real-world projects and case studies</li>
-                </ul>
-                <a href="#book-meeting" class="course-link">Enroll Now</a>
-            </div>
-            <!-- Salesforce Training -->
-            <div class="course-card">
-                <h3 class="course-title">Salesforce Administrator</h3>
-                <p class="course-description">Become an expert in Salesforce administration and tools.</p>
-                <ul style="text-align: left;">
-                    <li>User management and security</li>
-                    <li>Customization and workflow automation</li>
-                    <li>Integration with external systems</li>
-                    <li>Certification preparation</li>
-                </ul>
-                <a href="#book-meeting" class="course-link">Enroll Now</a>
-            </div>
-            <!-- Python for Data Science -->
-            <div class="course-card">
-                <h3 class="course-title">Python for Data Science</h3>
-                <p class="course-description">Dive deep into data science with Python.</p>
-                <ul style="text-align: left;">
-                    <li>Data manipulation with Pandas</li>
-                    <li>Visualization with Matplotlib and Seaborn</li>
-                    <li>Machine learning basics</li>
-                    <li>Real-world projects</li>
-                </ul>
-                <a href="#book-meeting" class="course-link">Enroll Now</a>
-            </div>
+            <!-- Course Cards (as you already have) -->
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact-section" id="book-meeting">
+    <section class="contact-section" id="contact">
         <h2>Contact Us</h2>
         <p>Let's work together to unlock your potential!</p>
         <div class="contact-links">
@@ -181,15 +183,11 @@
     <footer>
         <p>&copy; 2025 Zone.sd. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
-
-linkedin.comlinkedin.com
-Hussam Mohamed - Amazon | LinkedIn
-Results-oriented professional with a proven ability to drive clarity and improve… · Experience: Amazon · Education: Omdurman Ahlia Univarsity · Location: Des Moines Metropolitan Area · 500+ connections on LinkedIn. View Hussam Mohamed’s profile on LinkedIn, a professional community of 1 billion members.
-
-
-
-
-
-
