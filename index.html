@@ -14,50 +14,50 @@
             background: #f9f9f9;
             color: #333;
         }
-        /* Navbar */
-        .navbar {
-            background: #007bff;
-            padding: 1rem;
+        /* Header */
+        .header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: white;
+            padding: 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #fff;
         }
-        .navbar img {
-            height: 50px;
+        .header img {
+            height: 60px;
         }
-        .menu {
-            cursor: pointer;
+        .header .contact-info {
+            text-align: right;
+        }
+        .header .contact-info p {
+            margin: 0.2rem 0;
+            font-size: 0.9rem;
+        }
+        /* Navigation */
+        .navbar {
+            background: #ffc107;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
             font-weight: bold;
         }
-        .dropdown {
-            display: none;
-            position: absolute;
-            background: white;
-            border: 1px solid #ddd;
-            padding: 1rem;
-            z-index: 10;
-            top: 70px;
-            left: 10%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .dropdown a {
-            display: block;
-            text-decoration: none;
+        .navbar a {
             color: #333;
-            margin-bottom: 0.5rem;
+            margin: 0 1rem;
+            text-decoration: none;
         }
-        .dropdown a:hover {
+        .navbar a:hover {
             color: #007bff;
         }
         /* Courses Section */
         .course-section {
             padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
         }
         .course {
             margin-bottom: 2rem;
-            background: #eef7ff;
+            background: white;
             border-radius: 8px;
             padding: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -76,24 +76,31 @@
             background: #003f7d;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem;
+        }
+        footer p {
+            margin: 0.5rem 0;
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <!-- Header -->
+    <header class="header">
         <img src="Untitled design.jpg" alt="Zone Logo">
-        <div class="menu" onclick="toggleMenu()">Training Programs</div>
-    </nav>
+        <div class="contact-info">
+            <p><strong>Zone.sd</strong></p>
+            <p>1028 Greenway Ct, Altoona, Iowa</p>
+            <p>Email: contact@zone.sd | Phone: +1-123-456-7890</p>
+        </div>
+    </header>
 
-    <!-- Dropdown menu -->
-    <div class="dropdown" id="menu-dropdown">
-        <a href="#business-analyst">Business Analyst Training</a>
-        <a href="#data-analytics">Data Analytics Suite</a>
-        <a href="#salesforce">Salesforce Administrator</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#business-analyst">Business Analyst</a>
+        <a href="#data-analytics">Data Analytics</a>
+        <a href="#salesforce">Salesforce Admin</a>
         <a href="#python-data-science">Python for Data Science</a>
-    </div>
+    </nav>
 
     <!-- Courses Section -->
     <div class="course-section">
@@ -145,13 +152,7 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Zone.sd. All rights reserved.</p>
+        <p>Email: contact@zone.sd | Phone: +1-123-456-7890</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const menuDropdown = document.getElementById("menu-dropdown");
-            menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
-        }
-    </script>
 </body>
 </html>
